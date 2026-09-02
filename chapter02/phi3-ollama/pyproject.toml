@@ -1,0 +1,21 @@
+[project]
+name = "phi3-ollama"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Oleg Sitnikov", email = "oleg.sitnikov@icloud.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.3",
+    "ollama>=0.6.2",
+]
+
+[project.scripts]
+phi3-ollama = "phi3_ollama:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
